@@ -1,0 +1,280 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "daoInfos",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "dao",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "createdAt",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "creator",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "accessToken",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "investorToken",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "memberToken",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "daos",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_dao",
+						"type": "address"
+					}
+				],
+				"name": "getDaoInfo",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "dao",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "createdAt",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address",
+								"name": "creator",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "accessToken",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "investorToken",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "memberToken",
+								"type": "address"
+							}
+						],
+						"internalType": "struct DaoInfo",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getTotalAmountInvested",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_investor",
+						"type": "address"
+					}
+				],
+				"name": "getTotalAmountInvestedByInvestor",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getTotalNumberOfDaos",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "investmentsByUser",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_dao",
+						"type": "address"
+					}
+				],
+				"name": "isValidDao",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalInvested",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"src/core/Registry.sol": "Registry"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": [
+			":@filecoin/=lib/filecoin-solidity/",
+			":@openzeppelin-upgradeable/=lib/openzeppelin-contracts-upgradeable/",
+			":@openzeppelin/=lib/openzeppelin-contracts/",
+			":@solidity-bignumber/=lib/solidity-bignumber/",
+			":@solidity-cborutils/=lib/solidity-cborutils/",
+			":ds-test/=lib/forge-std/lib/ds-test/src/",
+			":forge-std/=lib/forge-std/src/"
+		]
+	},
+	"sources": {
+		"src/core/Registry.sol": {
+			"keccak256": "0xffc66c80716c9b39dcff3663fe01eb48a66350101065a905490ff44490e40adf",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://740fe3bd543aa8ec5123a8faee263dd8f0a4ebe9735091f3824da740d470825e",
+				"dweb:/ipfs/QmdwiH8hiQP3V68kA2FF5LYu9VyoJomJVae4METAVrexdv"
+			]
+		},
+		"src/utils/Enums.sol": {
+			"keccak256": "0x97efc123823fb40bfa60558fdadafe38bbadafdec7f816f772f58c04bfa465b2",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ffa85fa66177192e6f6539ba742d3a06833873a742b303e5c0ea39a8f8d19b71",
+				"dweb:/ipfs/QmZTr6jQhAtAg3M28U5f98adDnsMb8tM1Lc7hbwQDGMuEe"
+			]
+		},
+		"src/utils/Structs.sol": {
+			"keccak256": "0x853020425d17832959cf242f6893bf2a7da6e4e072ee59aecd979afb9f11ba6d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://bc2e58ac0e4bac8aa35d45b175748cd6b6119a1151b2d12f84a34fe2367d4ce4",
+				"dweb:/ipfs/QmUbKC2FD2oSAzwTHFRHJ4zawXeLCKnrxMy2DDpxjMHDFy"
+			]
+		}
+	},
+	"version": 1
+}

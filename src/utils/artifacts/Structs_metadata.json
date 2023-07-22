@@ -1,0 +1,61 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"src/utils/Structs.sol": "Structs"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": [
+			":@filecoin/=lib/filecoin-solidity/",
+			":@openzeppelin-upgradeable/=lib/openzeppelin-contracts-upgradeable/",
+			":@openzeppelin/=lib/openzeppelin-contracts/",
+			":@solidity-bignumber/=lib/solidity-bignumber/",
+			":@solidity-cborutils/=lib/solidity-cborutils/",
+			":ds-test/=lib/forge-std/lib/ds-test/src/",
+			":forge-std/=lib/forge-std/src/"
+		]
+	},
+	"sources": {
+		"src/utils/Enums.sol": {
+			"keccak256": "0x74104b743dfe8c91aaa32d0886e5dc7999edb4b5ec4845509d2e8e75b44ce467",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://db77d928b7015435aacc99d5e6120d944e8f60979e7cd7f6b4d7a7e014a57f69",
+				"dweb:/ipfs/QmXbDLwGhzYNs4AGVcZrC3snxh1buKgkqJ8XtTAXrSXap3"
+			]
+		},
+		"src/utils/Structs.sol": {
+			"keccak256": "0x4c7ad2f3b780c02435e5f866bedb50337e3df8ecc25e113a684a262c10eceec6",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6119a9c1c6be77d221110d1843bbbe084c3ffe69ec34d111b6e52a44f02b3d48",
+				"dweb:/ipfs/QmaKRdwhshEij9cPft1S5P6MHQxGUj9mbgjnMFFnGoHvRL"
+			]
+		}
+	},
+	"version": 1
+}

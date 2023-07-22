@@ -1,0 +1,124 @@
+{
+	"deploy": {
+		"VM:-": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"main:1": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"ropsten:3": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"rinkeby:4": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"kovan:42": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"goerli:5": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"Custom": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		}
+	},
+	"data": {
+		"bytecode": {
+			"functionDebugData": {},
+			"generatedSources": [],
+			"linkReferences": {},
+			"object": "",
+			"opcodes": "",
+			"sourceMap": ""
+		},
+		"deployedBytecode": {
+			"functionDebugData": {},
+			"generatedSources": [],
+			"immutableReferences": {},
+			"linkReferences": {},
+			"object": "",
+			"opcodes": "",
+			"sourceMap": ""
+		},
+		"gasEstimates": null,
+		"methodIdentifiers": {
+			"grantRole(bytes32,address)": "2f2ff15d",
+			"initialize(string,address,address,address,uint256,address,address,address)": "9ef129d8"
+		}
+	},
+	"abi": [
+		{
+			"inputs": [
+				{
+					"internalType": "bytes32",
+					"name": "role",
+					"type": "bytes32"
+				},
+				{
+					"internalType": "address",
+					"name": "account",
+					"type": "address"
+				}
+			],
+			"name": "grantRole",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "string",
+					"name": "_name",
+					"type": "string"
+				},
+				{
+					"internalType": "address",
+					"name": "_memberToken",
+					"type": "address"
+				},
+				{
+					"internalType": "contract AccessToken",
+					"name": "_accessToken",
+					"type": "address"
+				},
+				{
+					"internalType": "contract InvestorToken",
+					"name": "_investorToken",
+					"type": "address"
+				},
+				{
+					"internalType": "uint256",
+					"name": "_quoromNumeratorValue",
+					"type": "uint256"
+				},
+				{
+					"internalType": "contract IDaoLogic",
+					"name": "_daoLogic",
+					"type": "address"
+				},
+				{
+					"internalType": "address",
+					"name": "_admin",
+					"type": "address"
+				},
+				{
+					"internalType": "address",
+					"name": "_sciweave",
+					"type": "address"
+				}
+			],
+			"name": "initialize",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		}
+	]
+}

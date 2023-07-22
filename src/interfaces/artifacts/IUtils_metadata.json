@@ -1,0 +1,346 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "bytes",
+								"name": "val",
+								"type": "bytes"
+							},
+							{
+								"internalType": "bool",
+								"name": "neg",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct CommonTypes.BigInt",
+						"name": "bigInt",
+						"type": "tuple"
+					}
+				],
+				"name": "bigIntToUint",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "addr",
+						"type": "address"
+					}
+				],
+				"name": "getDelegatedAddress",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "bytes",
+								"name": "data",
+								"type": "bytes"
+							}
+						],
+						"internalType": "struct CommonTypes.FilAddress",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "bytes",
+								"name": "piece_cid",
+								"type": "bytes"
+							},
+							{
+								"internalType": "uint64",
+								"name": "piece_size",
+								"type": "uint64"
+							},
+							{
+								"internalType": "bool",
+								"name": "verified_deal",
+								"type": "bool"
+							},
+							{
+								"internalType": "string",
+								"name": "label",
+								"type": "string"
+							},
+							{
+								"internalType": "int64",
+								"name": "start_epoch",
+								"type": "int64"
+							},
+							{
+								"internalType": "int64",
+								"name": "end_epoch",
+								"type": "int64"
+							},
+							{
+								"internalType": "uint256",
+								"name": "storage_price_per_epoch",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "provider_collateral",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "client_collateral",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "dataCid",
+								"type": "string"
+							},
+							{
+								"internalType": "uint64",
+								"name": "extra_params_version",
+								"type": "uint64"
+							},
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "location_ref",
+										"type": "string"
+									},
+									{
+										"internalType": "uint64",
+										"name": "car_size",
+										"type": "uint64"
+									},
+									{
+										"internalType": "bool",
+										"name": "skip_ipni_announce",
+										"type": "bool"
+									},
+									{
+										"internalType": "bool",
+										"name": "remove_unsealed_copy",
+										"type": "bool"
+									}
+								],
+								"internalType": "struct Structs.ExtraParamsV1",
+								"name": "extra_params",
+								"type": "tuple"
+							}
+						],
+						"internalType": "struct Structs.DealRequest",
+						"name": "deal",
+						"type": "tuple"
+					}
+				],
+				"name": "serializeDealProposal",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "location_ref",
+								"type": "string"
+							},
+							{
+								"internalType": "uint64",
+								"name": "car_size",
+								"type": "uint64"
+							},
+							{
+								"internalType": "bool",
+								"name": "skip_ipni_announce",
+								"type": "bool"
+							},
+							{
+								"internalType": "bool",
+								"name": "remove_unsealed_copy",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct Structs.ExtraParamsV1",
+						"name": "params",
+						"type": "tuple"
+					}
+				],
+				"name": "serializeExtraParamsV1",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "bytes",
+								"name": "val",
+								"type": "bytes"
+							},
+							{
+								"internalType": "bool",
+								"name": "neg",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct CommonTypes.BigInt",
+						"name": "value",
+						"type": "tuple"
+					}
+				],
+				"name": "toUint256",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "uintToBigInt",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "bytes",
+								"name": "val",
+								"type": "bytes"
+							},
+							{
+								"internalType": "bool",
+								"name": "neg",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct CommonTypes.BigInt",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"src/interfaces/IUtils.sol": "IUtils"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": [
+			":@filecoin/=lib/filecoin-solidity/",
+			":@openzeppelin-upgradeable/=lib/openzeppelin-contracts-upgradeable/",
+			":@openzeppelin/=lib/openzeppelin-contracts/",
+			":@solidity-bignumber/=lib/solidity-bignumber/",
+			":@solidity-cborutils/=lib/solidity-cborutils/",
+			":ds-test/=lib/forge-std/lib/ds-test/src/",
+			":forge-std/=lib/forge-std/src/"
+		]
+	},
+	"sources": {
+		"lib/filecoin-solidity/contracts/v0.8/types/CommonTypes.sol": {
+			"keccak256": "0x1819b8e82cf53f0fadc446d064a380979888b97a0004f1e70c9fa1a6f4f13ed9",
+			"license": "Apache-2.0",
+			"urls": [
+				"bzz-raw://f7346f62e3317f519791256e9ecd70c44b3ed48404d8a15aa28b3490b11adabb",
+				"dweb:/ipfs/QmNQLSdzyHLDN9a76XANJzkGVVdyYwYzZSRRiwv6CqwZRr"
+			]
+		},
+		"src/interfaces/IUtils.sol": {
+			"keccak256": "0x221cc29ad7e90e60129d9da2310d488e9116fb427b5a787191239dce5a71d78c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://1c5e183fe7a4f90ef13d82beed5786184dbc9f635480787bc70d0e8a8137eeee",
+				"dweb:/ipfs/QmPDZm55sYyfqp59YJ9Ed7H78QJS8ikA7ZY2W5w3sXUTCr"
+			]
+		},
+		"src/utils/Enums.sol": {
+			"keccak256": "0x74104b743dfe8c91aaa32d0886e5dc7999edb4b5ec4845509d2e8e75b44ce467",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://db77d928b7015435aacc99d5e6120d944e8f60979e7cd7f6b4d7a7e014a57f69",
+				"dweb:/ipfs/QmXbDLwGhzYNs4AGVcZrC3snxh1buKgkqJ8XtTAXrSXap3"
+			]
+		},
+		"src/utils/Structs.sol": {
+			"keccak256": "0x4c7ad2f3b780c02435e5f866bedb50337e3df8ecc25e113a684a262c10eceec6",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6119a9c1c6be77d221110d1843bbbe084c3ffe69ec34d111b6e52a44f02b3d48",
+				"dweb:/ipfs/QmaKRdwhshEij9cPft1S5P6MHQxGUj9mbgjnMFFnGoHvRL"
+			]
+		}
+	},
+	"version": 1
+}

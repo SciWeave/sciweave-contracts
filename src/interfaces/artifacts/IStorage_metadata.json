@@ -1,0 +1,649 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_proposalId",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "addInvestorTokenToProposal",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_id",
+						"type": "bytes32"
+					}
+				],
+				"name": "dealRequestIdx",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "idx",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bool",
+								"name": "valid",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct Structs.RequestIdx",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_idx",
+						"type": "uint256"
+					}
+				],
+				"name": "dealRequests",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "bytes",
+								"name": "piece_cid",
+								"type": "bytes"
+							},
+							{
+								"internalType": "uint64",
+								"name": "piece_size",
+								"type": "uint64"
+							},
+							{
+								"internalType": "bool",
+								"name": "verified_deal",
+								"type": "bool"
+							},
+							{
+								"internalType": "string",
+								"name": "label",
+								"type": "string"
+							},
+							{
+								"internalType": "int64",
+								"name": "start_epoch",
+								"type": "int64"
+							},
+							{
+								"internalType": "int64",
+								"name": "end_epoch",
+								"type": "int64"
+							},
+							{
+								"internalType": "uint256",
+								"name": "storage_price_per_epoch",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "provider_collateral",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "client_collateral",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "dataCid",
+								"type": "string"
+							},
+							{
+								"internalType": "uint64",
+								"name": "extra_params_version",
+								"type": "uint64"
+							},
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "location_ref",
+										"type": "string"
+									},
+									{
+										"internalType": "uint64",
+										"name": "car_size",
+										"type": "uint64"
+									},
+									{
+										"internalType": "bool",
+										"name": "skip_ipni_announce",
+										"type": "bool"
+									},
+									{
+										"internalType": "bool",
+										"name": "remove_unsealed_copy",
+										"type": "bool"
+									}
+								],
+								"internalType": "struct Structs.ExtraParamsV1",
+								"name": "extra_params",
+								"type": "tuple"
+							}
+						],
+						"internalType": "struct Structs.DealRequest",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_proposalId",
+						"type": "bytes32"
+					}
+				],
+				"name": "endVotingOnResearchResult",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_proposalId",
+						"type": "bytes32"
+					}
+				],
+				"name": "getInvestorTokensForProposal",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "proposalId",
+						"type": "bytes32"
+					}
+				],
+				"name": "getResearchProposal",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "bytes32",
+								"name": "id",
+								"type": "bytes32"
+							},
+							{
+								"internalType": "address",
+								"name": "creator",
+								"type": "address"
+							},
+							{
+								"internalType": "enum ResearchState",
+								"name": "state",
+								"type": "uint8"
+							},
+							{
+								"internalType": "string",
+								"name": "title",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "descriptionUrl",
+								"type": "string"
+							},
+							{
+								"internalType": "address",
+								"name": "fundingToken",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "fundingAmount",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "fundingDuration",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "researchDuration",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "fundingStartedAt",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "researchStartedAt",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "amountInvested",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256[]",
+								"name": "investorTokens",
+								"type": "uint256[]"
+							}
+						],
+						"internalType": "struct Structs.ResearchProposal",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_proposalId",
+						"type": "bytes32"
+					}
+				],
+				"name": "getVoteStartForResarchProposal",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "isAdmin",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_token",
+						"type": "address"
+					}
+				],
+				"name": "isTokenSupported",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_id",
+						"type": "bytes32"
+					}
+				],
+				"name": "researchDeals",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "bytes32",
+								"name": "dealId",
+								"type": "bytes32"
+							},
+							{
+								"internalType": "address",
+								"name": "uploader",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "cid",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "title",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "description",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "price",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct Structs.Research",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_id",
+						"type": "bytes32"
+					},
+					{
+						"components": [
+							{
+								"internalType": "bytes32",
+								"name": "dealId",
+								"type": "bytes32"
+							},
+							{
+								"internalType": "address",
+								"name": "uploader",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "cid",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "title",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "description",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "price",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct Structs.Research",
+						"name": "_researchDeal",
+						"type": "tuple"
+					}
+				],
+				"name": "setResearchDeal",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "bytes32",
+								"name": "id",
+								"type": "bytes32"
+							},
+							{
+								"internalType": "address",
+								"name": "creator",
+								"type": "address"
+							},
+							{
+								"internalType": "enum ResearchState",
+								"name": "state",
+								"type": "uint8"
+							},
+							{
+								"internalType": "string",
+								"name": "title",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "descriptionUrl",
+								"type": "string"
+							},
+							{
+								"internalType": "address",
+								"name": "fundingToken",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "fundingAmount",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "fundingDuration",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "researchDuration",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "fundingStartedAt",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "researchStartedAt",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "amountInvested",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256[]",
+								"name": "investorTokens",
+								"type": "uint256[]"
+							}
+						],
+						"internalType": "struct Structs.ResearchProposal",
+						"name": "proposal",
+						"type": "tuple"
+					}
+				],
+				"name": "setResearchProposal",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_proposalId",
+						"type": "bytes32"
+					}
+				],
+				"name": "startResearch",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_proposalId",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "updateResearchProposalInvestedAmount",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_proposalId",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "enum ResearchState",
+						"name": "_state",
+						"type": "uint8"
+					}
+				],
+				"name": "updateResearchProposalState",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_proposalId",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					},
+					{
+						"internalType": "enum ResearchVote",
+						"name": "vote",
+						"type": "uint8"
+					}
+				],
+				"name": "voteOnResearch",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"src/interfaces/IStorage.sol": "IStorage"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": [
+			":@filecoin/=lib/filecoin-solidity/",
+			":@openzeppelin/=lib/openzeppelin-contracts/",
+			":@solidity-bignumber/=lib/solidity-bignumber/",
+			":@solidity-cborutils/=lib/solidity-cborutils/",
+			":ds-test/=lib/forge-std/lib/ds-test/src/",
+			":forge-std/=lib/forge-std/src/"
+		]
+	},
+	"sources": {
+		"src/interfaces/IStorage.sol": {
+			"keccak256": "0x5635dd8fe43bb5bea890f7b9df2ffffe101aa4d873783c68f645a44a56c6c2f5",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://fbea4d6d30e53539ca68f3c8b6e867f4068667d1a877006b316ba68bf05c3d7b",
+				"dweb:/ipfs/QmSq4QchSuMEUSRWvGQhstYJssxpb8BfBcbSFHgw98Sp47"
+			]
+		},
+		"src/utils/Enums.sol": {
+			"keccak256": "0x74104b743dfe8c91aaa32d0886e5dc7999edb4b5ec4845509d2e8e75b44ce467",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://db77d928b7015435aacc99d5e6120d944e8f60979e7cd7f6b4d7a7e014a57f69",
+				"dweb:/ipfs/QmXbDLwGhzYNs4AGVcZrC3snxh1buKgkqJ8XtTAXrSXap3"
+			]
+		},
+		"src/utils/Structs.sol": {
+			"keccak256": "0x1d5387c3f4a055e4cc9f55adb350164a024eb3d0c836f5234b4ec3fa16c87591",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4fb725613472156a70a6d6be6610354239d9b2182ef8ad568769885c7dce49c1",
+				"dweb:/ipfs/QmTC2HtuQiPwapn2befVmafVXeuAzRPU9bimJqWwGw2Ni8"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,319 @@
+{
+	"deploy": {
+		"VM:-": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"main:1": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"ropsten:3": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"rinkeby:4": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"kovan:42": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"goerli:5": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"Custom": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		}
+	},
+	"data": {
+		"bytecode": {
+			"functionDebugData": {},
+			"generatedSources": [],
+			"linkReferences": {},
+			"object": "",
+			"opcodes": "",
+			"sourceMap": ""
+		},
+		"deployedBytecode": {
+			"functionDebugData": {},
+			"generatedSources": [],
+			"immutableReferences": {},
+			"linkReferences": {},
+			"object": "",
+			"opcodes": "",
+			"sourceMap": ""
+		},
+		"gasEstimates": null,
+		"methodIdentifiers": {
+			"addBalance()": "b163cc38",
+			"buyResearchDeal(bytes32)": "10c88e74",
+			"createResarchDeal(string,string,uint256,string)": "c529eae3",
+			"handle_filecoin_method(uint64,uint64,bytes)": "868e10c4",
+			"initialize(address,address,address)": "c0c53b8b",
+			"makeDealProposal((bytes,uint64,bool,string,int64,int64,uint256,uint256,uint256,string,uint64,(string,uint64,bool,bool)),address)": "48474f56",
+			"updateActivationStatus(bytes)": "66263735",
+			"withdrawBalance(address,uint256)": "0cf20cc9"
+		}
+	},
+	"abi": [
+		{
+			"inputs": [],
+			"name": "addBalance",
+			"outputs": [],
+			"stateMutability": "payable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "bytes32",
+					"name": "_id",
+					"type": "bytes32"
+				}
+			],
+			"name": "buyResearchDeal",
+			"outputs": [],
+			"stateMutability": "payable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "string",
+					"name": "_title",
+					"type": "string"
+				},
+				{
+					"internalType": "string",
+					"name": "_description",
+					"type": "string"
+				},
+				{
+					"internalType": "uint256",
+					"name": "_price",
+					"type": "uint256"
+				},
+				{
+					"internalType": "string",
+					"name": "_dataCid",
+					"type": "string"
+				}
+			],
+			"name": "createResarchDeal",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint64",
+					"name": "method",
+					"type": "uint64"
+				},
+				{
+					"internalType": "uint64",
+					"name": "",
+					"type": "uint64"
+				},
+				{
+					"internalType": "bytes",
+					"name": "params",
+					"type": "bytes"
+				}
+			],
+			"name": "handle_filecoin_method",
+			"outputs": [
+				{
+					"internalType": "uint32",
+					"name": "",
+					"type": "uint32"
+				},
+				{
+					"internalType": "uint64",
+					"name": "",
+					"type": "uint64"
+				},
+				{
+					"internalType": "bytes",
+					"name": "",
+					"type": "bytes"
+				}
+			],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "contract AccessToken",
+					"name": "_accessToken",
+					"type": "address"
+				},
+				{
+					"internalType": "contract IUtils",
+					"name": "_utils",
+					"type": "address"
+				},
+				{
+					"internalType": "address",
+					"name": "_base",
+					"type": "address"
+				}
+			],
+			"name": "initialize",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"components": [
+						{
+							"internalType": "bytes",
+							"name": "piece_cid",
+							"type": "bytes"
+						},
+						{
+							"internalType": "uint64",
+							"name": "piece_size",
+							"type": "uint64"
+						},
+						{
+							"internalType": "bool",
+							"name": "verified_deal",
+							"type": "bool"
+						},
+						{
+							"internalType": "string",
+							"name": "label",
+							"type": "string"
+						},
+						{
+							"internalType": "int64",
+							"name": "start_epoch",
+							"type": "int64"
+						},
+						{
+							"internalType": "int64",
+							"name": "end_epoch",
+							"type": "int64"
+						},
+						{
+							"internalType": "uint256",
+							"name": "storage_price_per_epoch",
+							"type": "uint256"
+						},
+						{
+							"internalType": "uint256",
+							"name": "provider_collateral",
+							"type": "uint256"
+						},
+						{
+							"internalType": "uint256",
+							"name": "client_collateral",
+							"type": "uint256"
+						},
+						{
+							"internalType": "string",
+							"name": "dataCid",
+							"type": "string"
+						},
+						{
+							"internalType": "uint64",
+							"name": "extra_params_version",
+							"type": "uint64"
+						},
+						{
+							"components": [
+								{
+									"internalType": "string",
+									"name": "location_ref",
+									"type": "string"
+								},
+								{
+									"internalType": "uint64",
+									"name": "car_size",
+									"type": "uint64"
+								},
+								{
+									"internalType": "bool",
+									"name": "skip_ipni_announce",
+									"type": "bool"
+								},
+								{
+									"internalType": "bool",
+									"name": "remove_unsealed_copy",
+									"type": "bool"
+								}
+							],
+							"internalType": "struct ExtraParamsV1",
+							"name": "extra_params",
+							"type": "tuple"
+						}
+					],
+					"internalType": "struct DealRequest",
+					"name": "deal",
+					"type": "tuple"
+				},
+				{
+					"internalType": "address",
+					"name": "uploader",
+					"type": "address"
+				}
+			],
+			"name": "makeDealProposal",
+			"outputs": [
+				{
+					"internalType": "bytes32",
+					"name": "",
+					"type": "bytes32"
+				}
+			],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "bytes",
+					"name": "pieceCid",
+					"type": "bytes"
+				}
+			],
+			"name": "updateActivationStatus",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "client",
+					"type": "address"
+				},
+				{
+					"internalType": "uint256",
+					"name": "value",
+					"type": "uint256"
+				}
+			],
+			"name": "withdrawBalance",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		}
+	]
+}

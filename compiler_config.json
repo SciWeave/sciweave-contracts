@@ -1,0 +1,38 @@
+{
+	"language": "Solidity",
+	"settings": {
+		"optimizer": {
+			"enabled": true,
+			"runs": 20
+		},
+		"outputSelection": {
+			"*": {
+				"": [
+					"ast"
+				],
+				"*": [
+					"abi",
+					"metadata",
+					"devdoc",
+					"userdoc",
+					"storageLayout",
+					"evm.legacyAssembly",
+					"evm.bytecode",
+					"evm.deployedBytecode",
+					"evm.methodIdentifiers",
+					"evm.gasEstimates",
+					"evm.assembly"
+				]
+			}
+		},
+		"remappings": [
+			"ds-test/=lib/forge-std/lib/ds-test/src/",
+			"forge-std/=lib/forge-std/src/",
+            "@solidity-cborutils/=lib/solidity-cborutils/",
+            "@openzeppelin/=lib/openzeppelin-contracts/",
+			"@openzeppelin-upgradeable/=lib/openzeppelin-contracts-upgradeable/",
+            "@filecoin/=lib/filecoin-solidity/",
+            "@solidity-bignumber/=lib/solidity-bignumber/"
+		]
+	}
+}
